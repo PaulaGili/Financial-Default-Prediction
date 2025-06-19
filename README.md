@@ -1,50 +1,50 @@
-# Predicting Loan Defaults with Machine Learning
+# Predicting Loan Defaults Using Machine Learning
 
-This project aims to develop a Machine Learning model capable of predicting whether a personal loan will be repaid or defaulted, using real-world loan data.
+This project develops a machine learning model to predict whether a personal loan will be repaid or defaulted.
 
 ## Objective
 
-To anticipate credit risk by building a binary classification model (`paid = 1` / `default = 0`) that supports informed decision-making in financial institutions and reduces exposure to lending risk.
+To proactively assess credit risk by building a binary classification model (`paid = 1` / `default = 0`). The goal is to aid financial institutions in making informed lending decisions and minimizing exposure to loan defaults.
 
 ---
 
 ## Methodology
 
-The pipeline follows all key stages of a standard machine learning project:
+The project follows a comprehensive machine learning pipeline including the following steps:
 
 1. **Exploratory Data Analysis (EDA)**
-   - Descriptive statistics
-   - Visualization of variable distributions and correlations
-   - Detection of outliers and key behavioral patterns
-   - Generation of reports: `output_graphs.pdf` and `distribution_variables.pdf`
+   - Summary statistics and data overview
+   - Visualizations of variable distributions and correlations
+   - Identification of outliers and behavioral patterns
+   - Generated reports: `output_graphs.pdf` and `distribution_variables.pdf`
 
-2. **Preprocessing**
-   - Handling missing or inconsistent data
-   - Removing outliers
-   - Encoding categorical variables
-   - Scaling numerical features for model optimization
+2. **Data Preprocessing**
+   - Handling missing or inconsistent values
+   - Outlier removal
+   - Encoding categorical features
+   - Scaling numerical variables to enhance model performance
 
-3. **Class Imbalance Handling**
-   - Application of **SMOTE** (Synthetic Minority Over-sampling Technique) to balance the dataset by oversampling the minority class (`default`)
+3. **Addressing Class Imbalance**
+   - Applied **SMOTE** (Synthetic Minority Over-sampling Technique) to balance the dataset by oversampling the minority class (`default`)
 
-4. **Modeling**
-   - Training and evaluation of multiple supervised classification algorithms:
+4. **Model Development**
+   - Training and tuning various supervised classifiers:
      - Random Forest  
      - XGBoost  
      - HistGradientBoosting  
      - Logistic Regression
 
-5. **Evaluation**
-    - Performance metrics used:
-    - Accuracy
-    - Precision
-    - Recall
-    - F1-score
-    - Confusion Matrix for error analysis
+5. **Model Evaluation**
+   - Metrics employed:
+     - Accuracy
+     - Precision
+     - Recall
+     - F1-score
+     - Confusion matrix for detailed error analysis
 
-6. **Interpretability**
-   - Feature importance analysis
-   - Local and global explanation of model predictions using **SHAP**
+6. **Model Interpretability**
+   - Feature importance ranking
+   - Local and global explanations using **SHAP** values
 
 ---
 
